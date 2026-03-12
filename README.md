@@ -9,7 +9,7 @@
 
 **A modern, fully responsive portfolio website showcasing data analytics projects, Power BI dashboards, and technical expertise.**
 
-[🔗 Live Site](https://bilaljabasini.vercel.app) · [📧 Email](mailto:bilal.jabasini@gmail.com) · [💼 LinkedIn](https://linkedin.com/in/bilal-jabasini)
+[🔗 Live Site](https://bilal-jabasini.vercel.app) · [📧 Email](mailto:bilal.jabasini@gmail.com) · [💼 LinkedIn](https://linkedin.com/in/bilal-jabasini)
 
 </div>
 
