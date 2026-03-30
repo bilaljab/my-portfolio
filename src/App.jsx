@@ -3,7 +3,7 @@ import { createPortal } from "react-dom";
 import {
   Github, Linkedin, Mail, Phone, ChevronDown,
   Database, BarChart3, Code2, ArrowUpRight,
-  MapPin, Layers, TrendingUp, Menu, X
+  MapPin, Layers, TrendingUp, Menu, X, FileText
 } from "lucide-react";
 import "./portfolio.css";
 
@@ -139,6 +139,9 @@ function Hero() {
         </a>
         <a href="https://linkedin.com/in/bilal-jabasini" target="_blank" rel="noreferrer" className="cta-secondary">
           <Linkedin size={16} /> LinkedIn
+        </a>
+        <a href="/cv.pdf" target="_blank" rel="noreferrer" className="cta-secondary">
+          <FileText size={16} /> CV
         </a>
       </div>
 
@@ -439,7 +442,7 @@ const SKILL_CATS = [
   },
   {
     color: P, Icon: BarChart3, title: "Visualization & BI",
-    items: [{ l: "Power BI (DAX)", n: 5 }, { l: "Star Schema Design", n: 5 }, { l: "Dashboard Design", n: 4 }, { l: "Data Storytelling", n: 5 }],
+    items: [{ l: "Power BI (DAX)", n: 5 }, { l: "Excel (Pivot Tables)", n: 4 }, { l: "Star Schema Design", n: 5 }, { l: "Data Storytelling", n: 5 }],
   },
   {
     color: G, Icon: Database, title: "Data Engineering",
@@ -493,7 +496,7 @@ function Skills() {
    EXPERIENCE
 ══════════════════════════════════════════════════════ */
 const EXP = [
-  { date: "02/2026", tag: "Analytics Project", type: "work",    title: "Independent Data Analytics — NYC Council",    desc: "Delivered a consulting-grade audit of $4.99B in public discretionary funds, engineered a Python–MySQL–Power BI pipeline, and produced executive deliverables structured around the Pyramid Principle." },
+  { date: "03/2026", tag: "Analytics Project", type: "work",    title: "Independent Data Analytics — NYC Council",    desc: "Delivered a consulting-grade audit of $4.99B in public discretionary funds, engineered a Python–MySQL–Power BI pipeline, and produced executive deliverables structured around the Pyramid Principle." },
   { date: "02/2026", tag: "Virtual Program",   type: "project", title: "BCG X · Data for Decision Making",            desc: "Applied advanced Excel pivot analysis to digital campaign data, producing data-driven budget reallocation recommendations aligned to strategic marketing KPIs." },
   { date: "02/2026", tag: "Virtual Program",   type: "project", title: "Tata · Empowering Business with Insights",    desc: "Designed an executive Power BI dashboard from raw retail transaction data — delivering revenue trend and seasonal intelligence to a C-suite audience." },
   { date: "02/2026", tag: "Virtual Program",   type: "project", title: "EA · Product Management Simulation",          desc: "Evaluated KPI frameworks for a mobile strategy game and translated data-driven insights into a stakeholder-facing product performance presentation." },
@@ -547,10 +550,12 @@ function Experience() {
    CERTIFICATIONS
 ══════════════════════════════════════════════════════ */
 const CERTS = [
-  { title: "CS50P",               org: "Harvard University", desc: "Python Programming",                     color: A },
-  { title: "AWS CPE",             org: "AWS Skill Builder",  desc: "Cloud Practitioner Essentials",          color: O },
-  { title: "GenAI Data Analysis", org: "Microsoft",          desc: "Professional Certificate · In Progress", color: P },
-  { title: "IELTS 7.0",           org: "Academic",           desc: "C1 English Proficiency",                 color: G },
+  { title: "CS50P",               org: "Harvard University",  desc: "Introduction to Python Programming",      color: A },
+  { title: "AWS CPE",             org: "AWS Skill Builder",   desc: "Cloud Practitioner Essentials",           color: O },
+  { title: "IBM GenAI",           org: "IBM & eYouth",        desc: "Generative AI & AI Agents",               color: P },
+  { title: "GenAI for Data",      org: "Microsoft",           desc: "Data Analysis Certificate · In Progress", color: P },
+  { title: "Data Analysis",       org: "freeCodeCamp",        desc: "Data Analysis with Python",               color: G },
+  { title: "IELTS 7.0",           org: "Academic",            desc: "C1 English Proficiency",                  color: G },
 ];
 
 function Certifications() {
