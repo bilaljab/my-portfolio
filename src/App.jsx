@@ -8,11 +8,14 @@ import {
 import "./portfolio.css";
 
 /* ─── Images ─────────────────────────────────────────── */
-const NYC_IMG    = "/nyc.png";
-const GAMING_SUM = "/gaming-sum.png";
-const GAMING_DET = "/gaming-det.png";
-const SURVEY_IMG = "/survey.png";
-const PP_IMG     = "/pp.jpg";
+const NYC_IMG      = "/nyc.png";
+const GAMING_SUM   = "/gaming-sum.png";
+const GAMING_DET   = "/gaming-det.png";
+const SURVEY_IMG   = "/survey.png";
+const PP_IMG       = "/pp.jpg";
+const RETAIL_EXEC  = "/retail-exec.png";
+const RETAIL_CUST  = "/retail-cust.png";
+const RETAIL_PROD  = "/retail-prod.png";
 
 /* ─── Colors (JS-side only for dynamic values) ──────── */
 const A = "#38bdf8"; // accent
@@ -240,6 +243,13 @@ const PROJECTS = [
     url: "https://github.com/bilaljab/Survey-Analyst-PowerBI",
     Icon: Layers,
   },
+  {
+    title: "Online Retail Analytics",
+    desc: "End-to-end Power BI analytics solution on 8.91M in revenue across 18.5K orders — uncovering that 73% of revenue comes from 30% VIP customers and identifying 2,150 at-risk customers requiring immediate re-engagement.",
+    tech: ["Power BI", "DAX", "RFM Segmentation", "Customer Analytics", "Data Modeling"],
+    url: "https://github.com/bilaljab/online-retail-analytics",
+    Icon: TrendingUp,
+  },
 ];
 
 function ProjectCard({ p, delay }) {
@@ -410,6 +420,15 @@ const BOARDS = [
     images: [SURVEY_IMG],
     url: "https://github.com/bilaljab/Survey-Analyst-PowerBI",
   },
+  {
+    title: "Online Retail Analytics",
+    desc: "3-page executive dashboard on $8.91M revenue — segmenting 4,338 customers via RFM analysis, identifying 2,150 at-risk accounts, and surfacing UK market dependency risk.",
+    tools: ["Power BI", "DAX", "RFM Analysis", "Customer Segmentation"],
+    color: G,
+    images: [RETAIL_EXEC, RETAIL_CUST, RETAIL_PROD],
+    tabs: ["Executive", "Customer", "Product"],
+    url: "https://github.com/bilaljab/online-retail-analytics",
+  },
 ];
 
 function Dashboards() {
@@ -500,6 +519,7 @@ const EXP = [
   { date: "02/2026", tag: "Virtual Program",   type: "project", title: "BCG X · Data for Decision Making",            desc: "Applied advanced Excel pivot analysis to digital campaign data, producing data-driven budget reallocation recommendations aligned to strategic marketing KPIs." },
   { date: "02/2026", tag: "Virtual Program",   type: "project", title: "Tata · Empowering Business with Insights",    desc: "Designed an executive Power BI dashboard from raw retail transaction data — delivering revenue trend and seasonal intelligence to a C-suite audience." },
   { date: "02/2026", tag: "Virtual Program",   type: "project", title: "EA · Product Management Simulation",          desc: "Evaluated KPI frameworks for a mobile strategy game and translated data-driven insights into a stakeholder-facing product performance presentation." },
+  { date: "01/2026", tag: "Analytics Project", type: "work",    title: "Online Retail Analytics",             desc: "Built a 3-page Power BI solution on $8.91M in e-commerce revenue — applying RFM segmentation to classify 4,338 customers, flagging 2,150 at-risk accounts, and delivering actionable re-engagement recommendations." },
   { date: "11/2025", tag: "Project",           type: "project", title: "Layoffs EDA — Advanced SQL",                  desc: "Deep-dived into 2,300+ global layoff records (2020–2023) using CTEs, DENSE_RANK(), and rolling window functions to surface cumulative trends and identify top offenders per year." },
   { date: "11/2025", tag: "Project",           type: "project", title: "Layoffs Data Cleaning — MySQL",                desc: "Built a professional data cleaning pipeline using staging tables, ROW_NUMBER() deduplication, TRIM standardization, NULL handling, and STR_TO_DATE conversion — producing an analysis-ready dataset." },
   { date: "02/2025", tag: "Education",         type: "edu",     title: "BSc Informatics Engineering — IUST",          desc: "Graduated from the International University for Science and Technology, Damascus, Syria." },
