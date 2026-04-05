@@ -165,10 +165,10 @@ function Hero() {
 function Stats() {
   const [ref, vis] = useInView();
   const items = [
-    { v: "5",      l: "Projects Delivered" },
+    { v: "6",      l: "Projects Delivered" },
+    { v: "541K+",  l: "Transactions Processed" },
     { v: "$4.99B", l: "Dataset Audited" },
-    { v: "383K+",  l: "Records Analyzed" },
-    { v: "3",      l: "Tools Mastered" },
+    { v: "60K+",   l: "ETL Records Cleaned" },
   ];
   return (
     <div className="stats" ref={ref}>
@@ -209,6 +209,13 @@ function SectionHeader({ tag, title, ghost, desc }) {
 ══════════════════════════════════════════════════════ */
 const PROJECTS = [
   {
+    title: "Online Retail Analytics",
+    desc: "Full-stack analytics pipeline on 541K transactions — cleaning raw data with Python/Pandas, building cohort retention & RFM segmentation models, loading into MySQL via SQLAlchemy, and delivering a 3-page Power BI dashboard that identified 2,150 at-risk customers and proved 30% of customers drive 73% of revenue.",
+    tech: ["Python", "Pandas", "MySQL", "SQLAlchemy", "Power BI", "RFM", "Cohort Analysis"],
+    url: "https://github.com/bilaljab/online-retail-analytics",
+    Icon: TrendingUp,
+  },
+  {
     title: "NYC Funding Strategic Audit",
     desc: "End-to-end audit of $4.99B in NYC discretionary spending across 97K transactions — uncovering that 87.52% ($4.09B) was hidden under a generic label, directly informing fiscal transparency policy recommendations.",
     tech: ["Python", "Pandas", "MySQL", "Power BI", "Star Schema"],
@@ -242,13 +249,6 @@ const PROJECTS = [
     tech: ["Power BI", "DAX", "Power Query", "Data Modeling", "KPI Cards"],
     url: "https://github.com/bilaljab/Survey-Analyst-PowerBI",
     Icon: Layers,
-  },
-  {
-    title: "Online Retail Analytics",
-    desc: "End-to-end Power BI analytics solution on 8.91M in revenue across 18.5K orders — uncovering that 73% of revenue comes from 30% VIP customers and identifying 2,150 at-risk customers requiring immediate re-engagement.",
-    tech: ["Power BI", "DAX", "RFM Segmentation", "Customer Analytics", "Data Modeling"],
-    url: "https://github.com/bilaljab/online-retail-analytics",
-    Icon: TrendingUp,
   },
 ];
 
@@ -396,6 +396,15 @@ function Mockup({ title, desc, tools, color, images, tabs, url }) {
 
 const BOARDS = [
   {
+    title: "Online Retail Analytics",
+    desc: "3-page executive dashboard on £8.91M revenue across 541K transactions — RFM segmentation of 4,338 customers revealed VIP dependency risk, flagged 2,150 at-risk accounts, and exposed 82% UK market concentration.",
+    tools: ["Power BI", "DAX", "RFM Analysis", "Cohort Analysis", "Python", "MySQL"],
+    color: G,
+    images: [RETAIL_EXEC, RETAIL_CUST, RETAIL_PROD],
+    tabs: ["Executive", "Customer", "Product"],
+    url: "https://github.com/bilaljab/online-retail-analytics",
+  },
+  {
     title: "NYC Funding Strategic Audit",
     desc: "Interactive audit of $4.99B across 5,142 orgs and 97K transactions — exposing a $4.09B categorical visibility gap critical to fiscal transparency.",
     tools: ["Power BI", "DAX", "Star Schema", "MySQL", "Python"],
@@ -419,15 +428,6 @@ const BOARDS = [
     color: O,
     images: [SURVEY_IMG],
     url: "https://github.com/bilaljab/Survey-Analyst-PowerBI",
-  },
-  {
-    title: "Online Retail Analytics",
-    desc: "3-page executive dashboard on $8.91M revenue — segmenting 4,338 customers via RFM analysis, identifying 2,150 at-risk accounts, and surfacing UK market dependency risk.",
-    tools: ["Power BI", "DAX", "RFM Analysis", "Customer Segmentation"],
-    color: G,
-    images: [RETAIL_EXEC, RETAIL_CUST, RETAIL_PROD],
-    tabs: ["Executive", "Customer", "Product"],
-    url: "https://github.com/bilaljab/online-retail-analytics",
   },
 ];
 
@@ -515,11 +515,11 @@ function Skills() {
    EXPERIENCE
 ══════════════════════════════════════════════════════ */
 const EXP = [
+  { date: "04/2026", tag: "Analytics Project", type: "work",    title: "Online Retail Analytics",                     desc: "End-to-end pipeline on 541K e-commerce transactions — Python cleaning & cohort/RFM analysis, SQLAlchemy ETL into MySQL, and a 3-page Power BI dashboard proving 30% of customers drive 73% of revenue and flagging 2,150 at-risk accounts." },
   { date: "03/2026", tag: "Analytics Project", type: "work",    title: "Independent Data Analytics — NYC Council",    desc: "Delivered a consulting-grade audit of $4.99B in public discretionary funds, engineered a Python–MySQL–Power BI pipeline, and produced executive deliverables structured around the Pyramid Principle." },
   { date: "02/2026", tag: "Virtual Program",   type: "project", title: "BCG X · Data for Decision Making",            desc: "Applied advanced Excel pivot analysis to digital campaign data, producing data-driven budget reallocation recommendations aligned to strategic marketing KPIs." },
   { date: "02/2026", tag: "Virtual Program",   type: "project", title: "Tata · Empowering Business with Insights",    desc: "Designed an executive Power BI dashboard from raw retail transaction data — delivering revenue trend and seasonal intelligence to a C-suite audience." },
   { date: "02/2026", tag: "Virtual Program",   type: "project", title: "EA · Product Management Simulation",          desc: "Evaluated KPI frameworks for a mobile strategy game and translated data-driven insights into a stakeholder-facing product performance presentation." },
-  { date: "01/2026", tag: "Analytics Project", type: "work",    title: "Online Retail Analytics",             desc: "Built a 3-page Power BI solution on $8.91M in e-commerce revenue — applying RFM segmentation to classify 4,338 customers, flagging 2,150 at-risk accounts, and delivering actionable re-engagement recommendations." },
   { date: "11/2025", tag: "Project",           type: "project", title: "Layoffs EDA — Advanced SQL",                  desc: "Deep-dived into 2,300+ global layoff records (2020–2023) using CTEs, DENSE_RANK(), and rolling window functions to surface cumulative trends and identify top offenders per year." },
   { date: "11/2025", tag: "Project",           type: "project", title: "Layoffs Data Cleaning — MySQL",                desc: "Built a professional data cleaning pipeline using staging tables, ROW_NUMBER() deduplication, TRIM standardization, NULL handling, and STR_TO_DATE conversion — producing an analysis-ready dataset." },
   { date: "02/2025", tag: "Education",         type: "edu",     title: "BSc Informatics Engineering — IUST",          desc: "Graduated from the International University for Science and Technology, Damascus, Syria." },
