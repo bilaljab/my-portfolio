@@ -131,7 +131,7 @@ function Hero() {
       <p className="hero-sub">Data Analyst · Problem Solver · Insight Architect</p>
 
       <p className="hero-bio">
-        Informatics Engineering graduate currently interning at HNG — building end-to-end analytics pipelines with Python, SQL, and Power BI that turn raw numbers into measurable business decisions.
+        Informatics Engineering graduate currently advancing through HNG Internship, competing across 10 data analytics stages under real deadlines. I build end-to-end pipelines with Python, SQL, and Power BI: from 541K raw transactions to RFM segmentation models, from $4.99B government datasets to executive dashboards that drive decisions.
       </p>
 
       <div className="hero-ctas">
@@ -208,42 +208,42 @@ function SectionHeader({ tag, title, ghost, desc }) {
 const PROJECTS = [
   {
     title: "Online Retail Analytics",
-    desc: "Full-stack analytics pipeline on 541K transactions — cleaning raw data with Python/Pandas, building cohort retention & RFM segmentation models, loading into MySQL via SQLAlchemy, and delivering a 3-page Power BI dashboard that identified 2,150 at-risk customers and proved 30% of customers drive 73% of revenue.",
+    desc: "Full-stack analytics pipeline on 541K transactions, cleaning raw data with Python/Pandas, building cohort retention & RFM segmentation models, loading into MySQL via SQLAlchemy, and delivering a 3-page Power BI dashboard that identified 2,150 at-risk customers and proved 30% of customers drive 73% of revenue.",
     tech: ["Python", "Pandas", "MySQL", "SQLAlchemy", "Power BI", "RFM", "Cohort Analysis"],
     url: "https://github.com/bilaljab/online-retail-analytics",
     Icon: TrendingUp,
   },
   {
     title: "NYC Funding Strategic Audit",
-    desc: "End-to-end audit of $4.99B in NYC discretionary spending across 97K transactions — uncovering that 87.52% ($4.09B) was hidden under a generic label, directly informing fiscal transparency policy recommendations.",
+    desc: "End-to-end audit of $4.99B in NYC discretionary spending across 97K transactions, uncovering that 87.52% ($4.09B) was hidden under a generic label, directly informing fiscal transparency policy recommendations.",
     tech: ["Python", "Pandas", "MySQL", "Power BI", "Star Schema"],
     url: "https://github.com/bilaljab/NYC-Funding-Strategic-Audit",
     Icon: Database,
   },
   {
     title: "Game Market Intelligence Pipeline",
-    desc: "Production ETL pipeline processing 60K+ records proving that Critic Scores ≥8.5 are the primary driver of long-term revenue — reframing how publishers allocate review-marketing budgets.",
+    desc: "Production ETL pipeline processing 60K+ records proving that Critic Scores ≥8.5 are the primary driver of long-term revenue, reframing how publishers allocate review-marketing budgets.",
     tech: ["Python", "MySQL", "Power BI", "ETL", "Pandas", "SQLAlchemy"],
     url: "https://github.com/bilaljab/Game-Market-Intelligence-Pipeline",
     Icon: TrendingUp,
   },
   {
-    title: "Layoffs EDA — Advanced SQL",
+    title: "Layoffs EDA, Advanced SQL",
     desc: "Deep exploratory analysis on 2,300+ global layoff records (2020–2023) using CTEs, window functions, and DENSE_RANK() to surface cumulative trends, yearly top offenders, and sectoral collapse patterns.",
     tech: ["MySQL", "CTEs", "Window Functions", "DENSE_RANK", "Aggregations"],
     url: "https://github.com/bilaljab/EDA-on-Layoffs-Data-using-MySQL",
     Icon: BarChart3,
   },
   {
-    title: "Layoffs Data Cleaning — MySQL",
-    desc: "Professional-grade data cleaning pipeline on a real-world layoffs dataset — eliminating duplicates via ROW_NUMBER(), standardizing text fields, handling NULLs, and converting date formats for analysis-ready output.",
+    title: "Layoffs Data Cleaning, MySQL",
+    desc: "Professional-grade data cleaning pipeline on a real-world layoffs dataset, eliminating duplicates via ROW_NUMBER(), standardizing text fields, handling NULLs, and converting date formats for analysis-ready output.",
     tech: ["MySQL", "ROW_NUMBER()", "Staging Tables", "STR_TO_DATE", "Data QA"],
     url: "https://github.com/bilaljab/Layoffs-Data-Cleaning-using-MySQL",
     Icon: Code2,
   },
   {
-    title: "Survey Analyst — Power BI",
-    desc: "Transformed 630 raw survey responses from data professionals into an executive dashboard — isolating top salary benchmarks, satisfaction drivers, and language adoption trends across job titles.",
+    title: "Survey Analyst, Power BI",
+    desc: "Transformed 630 raw survey responses from data professionals into an executive dashboard, isolating top salary benchmarks, satisfaction drivers, and language adoption trends across job titles.",
     tech: ["Power BI", "DAX", "Power Query", "Data Modeling", "KPI Cards"],
     url: "https://github.com/bilaljab/Survey-Analyst-PowerBI",
     Icon: Layers,
@@ -290,7 +290,7 @@ function Projects() {
 }
 
 /* ══════════════════════════════════════════════════════
-   LIGHTBOX  — rendered via portal directly on body
+   LIGHTBOX , rendered via portal directly on body
 ══════════════════════════════════════════════════════ */
 function Lightbox({ img, title, onClose }) {
   useEffect(() => {
@@ -366,7 +366,7 @@ function Mockup({ title, desc, tools, color, images, tabs, url }) {
           </a>
         </div>
 
-        {/* Screenshot — click to expand */}
+        {/* Screenshot, click to expand */}
         <div className="mockup-img-wrap mockup-img-clickable" onClick={() => setLightbox(true)} title="Click to expand">
           <img src={img} alt={title} className="mockup-img" />
           <div className="mockup-expand-hint">
@@ -395,7 +395,7 @@ function Mockup({ title, desc, tools, color, images, tabs, url }) {
 const BOARDS = [
   {
     title: "Online Retail Analytics",
-    desc: "3-page executive dashboard on £8.91M revenue across 541K transactions — RFM segmentation of 4,338 customers revealed VIP dependency risk, flagged 2,150 at-risk accounts, and exposed 82% UK market concentration.",
+    desc: "3-page executive dashboard on £8.91M revenue across 541K transactions, RFM segmentation of 4,338 customers revealed VIP dependency risk, flagged 2,150 at-risk accounts, and exposed 82% UK market concentration.",
     tools: ["Power BI", "DAX", "RFM Analysis", "Cohort Analysis", "Python", "MySQL"],
     color: G,
     images: [RETAIL_EXEC, RETAIL_CUST, RETAIL_PROD],
@@ -404,7 +404,7 @@ const BOARDS = [
   },
   {
     title: "NYC Funding Strategic Audit",
-    desc: "Interactive audit of $4.99B across 5,142 orgs and 97K transactions — exposing a $4.09B categorical visibility gap critical to fiscal transparency.",
+    desc: "Interactive audit of $4.99B across 5,142 orgs and 97K transactions, exposing a $4.09B categorical visibility gap critical to fiscal transparency.",
     tools: ["Power BI", "DAX", "Star Schema", "MySQL", "Python"],
     color: A,
     images: [NYC_IMG],
@@ -420,7 +420,7 @@ const BOARDS = [
     url: "https://github.com/bilaljab/Game-Market-Intelligence-Pipeline",
   },
   {
-    title: "Survey Analyst — Power BI",
+    title: "Survey Analyst, Power BI",
     desc: "Transformed 630 survey responses into a live executive dashboard isolating salary benchmarks, satisfaction drivers, and language adoption trends across job titles.",
     tools: ["Power BI", "Data Modeling", "KPIs", "DAX"],
     color: O,
@@ -436,7 +436,7 @@ function Dashboards() {
         tag="Visual Intelligence"
         title="Dashboard"
         ghost="Showcase"
-        desc="Real Power BI dashboards — click the tabs on the Gaming card to switch views."
+        desc="Real Power BI dashboards, click the tabs on the Gaming card to switch views."
       />
       <div className="dash-grid">
         {BOARDS.map((b, i) => (
@@ -513,15 +513,15 @@ function Skills() {
    EXPERIENCE
 ══════════════════════════════════════════════════════ */
 const EXP = [
-  { date: "04/2026", tag: "Internship",        type: "work",    title: "Data Analyst Intern — HNG Internship",        desc: "Completing weekly data analysis tasks using Python and SQL across 10 competitive stages — advancing by delivering results under strict deadlines, producing structured reports reviewed by industry mentors, and collaborating with cross-functional teams in a fully remote environment." },
-  { date: "04/2026", tag: "Analytics Project", type: "work",    title: "Online Retail Analytics",                     desc: "End-to-end pipeline on 541K e-commerce transactions — Python cleaning & cohort/RFM analysis, SQLAlchemy ETL into MySQL, and a 3-page Power BI dashboard proving 30% of customers drive 73% of revenue and flagging 2,150 at-risk accounts." },
-  { date: "03/2026", tag: "Analytics Project", type: "work",    title: "Independent Data Analytics — NYC Council",    desc: "Delivered a consulting-grade audit of $4.99B in public discretionary funds, engineered a Python–MySQL–Power BI pipeline, and produced executive deliverables structured around the Pyramid Principle." },
+  { date: "04/2026", tag: "Internship",        type: "work",    title: "Data Analyst Intern, HNG Internship",        desc: "Completing weekly data analysis tasks using Python and SQL across 10 competitive stages, advancing by delivering results under strict deadlines, producing structured reports reviewed by industry mentors, and collaborating with cross-functional teams in a fully remote environment." },
+  { date: "04/2026", tag: "Analytics Project", type: "work",    title: "Online Retail Analytics",                     desc: "End-to-end pipeline on 541K e-commerce transactions, Python cleaning & cohort/RFM analysis, SQLAlchemy ETL into MySQL, and a 3-page Power BI dashboard proving 30% of customers drive 73% of revenue and flagging 2,150 at-risk accounts." },
+  { date: "03/2026", tag: "Analytics Project", type: "work",    title: "Independent Data Analytics, NYC Council",    desc: "Delivered a consulting-grade audit of $4.99B in public discretionary funds, engineered a Python–MySQL–Power BI pipeline, and produced executive deliverables structured around the Pyramid Principle." },
   { date: "02/2026", tag: "Virtual Program",   type: "project", title: "BCG X · Data for Decision Making",            desc: "Applied advanced Excel pivot analysis to digital campaign data, producing data-driven budget reallocation recommendations aligned to strategic marketing KPIs." },
-  { date: "02/2026", tag: "Virtual Program",   type: "project", title: "Tata · Empowering Business with Insights",    desc: "Designed an executive Power BI dashboard from raw retail transaction data — delivering revenue trend and seasonal intelligence to a C-suite audience." },
+  { date: "02/2026", tag: "Virtual Program",   type: "project", title: "Tata · Empowering Business with Insights",    desc: "Designed an executive Power BI dashboard from raw retail transaction data, delivering revenue trend and seasonal intelligence to a C-suite audience." },
   { date: "02/2026", tag: "Virtual Program",   type: "project", title: "EA · Product Management Simulation",          desc: "Evaluated KPI frameworks for a mobile strategy game and translated data-driven insights into a stakeholder-facing product performance presentation." },
-  { date: "11/2025", tag: "Project",           type: "project", title: "Layoffs EDA — Advanced SQL",                  desc: "Deep-dived into 2,300+ global layoff records (2020–2023) using CTEs, DENSE_RANK(), and rolling window functions to surface cumulative trends and identify top offenders per year." },
-  { date: "11/2025", tag: "Project",           type: "project", title: "Layoffs Data Cleaning — MySQL",                desc: "Built a professional data cleaning pipeline using staging tables, ROW_NUMBER() deduplication, TRIM standardization, NULL handling, and STR_TO_DATE conversion — producing an analysis-ready dataset." },
-  { date: "02/2025", tag: "Education",         type: "edu",     title: "BSc Informatics Engineering — IUST",          desc: "Graduated from the International University for Science and Technology, Damascus, Syria." },
+  { date: "11/2025", tag: "Project",           type: "project", title: "Layoffs EDA, Advanced SQL",                  desc: "Deep-dived into 2,300+ global layoff records (2020–2023) using CTEs, DENSE_RANK(), and rolling window functions to surface cumulative trends and identify top offenders per year." },
+  { date: "11/2025", tag: "Project",           type: "project", title: "Layoffs Data Cleaning, MySQL",                desc: "Built a professional data cleaning pipeline using staging tables, ROW_NUMBER() deduplication, TRIM standardization, NULL handling, and STR_TO_DATE conversion, producing an analysis-ready dataset." },
+  { date: "02/2025", tag: "Education",         type: "edu",     title: "BSc Informatics Engineering, IUST",          desc: "Graduated from the International University for Science and Technology, Damascus, Syria." },
 ];
 
 const DC = { work: A, project: P, edu: G };
@@ -616,7 +616,7 @@ function Contact() {
             <span style={{ color: A }}>Extraordinary</span>
           </h2>
           <p className="contact-sub">
-            Currently interning as a Data Analyst at HNG. Open to Data Analyst and BI Developer roles — let's talk about how I can turn your data into decisions.
+            Currently interning as a Data Analyst at HNG. Open to Data Analyst and BI Developer roles, let's talk about how I can turn your data into decisions.
           </p>
 
           <div className="contact-links">
