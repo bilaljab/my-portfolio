@@ -455,23 +455,23 @@ function Dashboards() {
 const SKILL_CATS = [
   {
     color: A, Icon: Code2, title: "Programming",
-    items: [{ l: "Python (Pandas, NumPy)", n: 5 }, { l: "MySQL (Joins, Window Funcs)", n: 5 }, { l: "Matplotlib / Seaborn", n: 4 }, { l: "Git & GitHub", n: 4 }],
+    items: [{ l: "Python (Pandas, NumPy)", n: 5 }, { l: "Python (Matplotlib, Seaborn)", n: 4 }, { l: "MySQL (Joins, Aggregations)", n: 5 }, { l: "MySQL (Window Functions)", n: 5 }],
   },
   {
     color: P, Icon: BarChart3, title: "Visualization & BI",
-    items: [{ l: "Power BI (DAX, Modeling)", n: 5 }, { l: "Excel (Pivot Tables)", n: 4 }, { l: "Power Query", n: 4 }, { l: "Data Storytelling", n: 5 }],
+    items: [{ l: "Power BI (Dashboards, DAX)", n: 5 }, { l: "Power BI (Data Modeling)", n: 5 }, { l: "Excel (Pivot Tables)", n: 4 }, { l: "Excel (Advanced Formulas)", n: 4 }],
   },
   {
     color: G, Icon: Database, title: "Analysis & Reporting",
-    items: [{ l: "EDA & Data Wrangling", n: 5 }, { l: "RFM Segmentation", n: 5 }, { l: "Cohort Analysis", n: 4 }, { l: "KPI Tracking", n: 5 }],
+    items: [{ l: "Data Analysis & Wrangling", n: 5 }, { l: "Exploratory Data Analysis", n: 5 }, { l: "KPI Tracking", n: 5 }, { l: "Data Storytelling", n: 5 }],
   },
   {
     color: O, Icon: Layers, title: "Data Engineering",
-    items: [{ l: "ETL Pipeline Dev", n: 4 }, { l: "Star Schema Modeling", n: 5 }, { l: "Data Cleaning & QA", n: 5 }, { l: "SQLAlchemy (ETL)", n: 4 }],
+    items: [{ l: "ETL Pipelines", n: 4 }, { l: "Data Cleaning & Validation", n: 5 }, { l: "Basic Relational Modeling", n: 4 }, { l: "Star Schema", n: 5 }],
   },
   {
     color: A, Icon: TrendingUp, title: "Cloud & Tools",
-    items: [{ l: "AWS (S3, RDS, IAM)", n: 3 }, { l: "Generative AI Analysis", n: 4 }, { l: "Prompt Engineering", n: 4 }, { l: "Analytical Thinking", n: 5 }],
+    items: [{ l: "AWS Cloud Foundations (S3, RDS, IAM)", n: 3 }, { l: "Git", n: 4 }, { l: "Power Query", n: 4 }, { l: "Attention to Detail", n: 5 }],
   },
 ];
 
