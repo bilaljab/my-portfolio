@@ -454,20 +454,24 @@ function Dashboards() {
 ══════════════════════════════════════════════════════ */
 const SKILL_CATS = [
   {
-    color: A, Icon: Code2, title: "Languages & Libraries",
-    items: [{ l: "Python (Pandas, NumPy)", n: 5 }, { l: "SQL / MySQL", n: 5 }, { l: "Matplotlib / Seaborn", n: 4 }, { l: "Git", n: 4 }],
+    color: A, Icon: Code2, title: "Programming",
+    items: [{ l: "Python (Pandas, NumPy)", n: 5 }, { l: "MySQL (Joins, Window Funcs)", n: 5 }, { l: "Matplotlib / Seaborn", n: 4 }, { l: "Git & GitHub", n: 4 }],
   },
   {
     color: P, Icon: BarChart3, title: "Visualization & BI",
-    items: [{ l: "Power BI (DAX)", n: 5 }, { l: "Excel (Pivot Tables)", n: 4 }, { l: "Star Schema Design", n: 5 }, { l: "Data Storytelling", n: 5 }],
+    items: [{ l: "Power BI (DAX, Modeling)", n: 5 }, { l: "Excel (Pivot Tables)", n: 4 }, { l: "Power Query", n: 4 }, { l: "Data Storytelling", n: 5 }],
   },
   {
-    color: G, Icon: Database, title: "Data Engineering",
-    items: [{ l: "ETL Pipeline Dev", n: 4 }, { l: "Data Modeling", n: 5 }, { l: "Data Quality / QA", n: 4 }, { l: "Window Funcs & CTEs", n: 5 }],
+    color: G, Icon: Database, title: "Analysis & Reporting",
+    items: [{ l: "EDA & Data Wrangling", n: 5 }, { l: "RFM Segmentation", n: 5 }, { l: "Cohort Analysis", n: 4 }, { l: "KPI Tracking", n: 5 }],
   },
   {
-    color: O, Icon: Code2, title: "Cloud & Emerging",
-    items: [{ l: "AWS (S3, RDS, IAM)", n: 3 }, { l: "Power Query", n: 4 }, { l: "Generative AI Analysis", n: 4 }, { l: "Prompt Engineering", n: 4 }],
+    color: O, Icon: Layers, title: "Data Engineering",
+    items: [{ l: "ETL Pipeline Dev", n: 4 }, { l: "Star Schema Modeling", n: 5 }, { l: "Data Cleaning & QA", n: 5 }, { l: "SQLAlchemy (ETL)", n: 4 }],
+  },
+  {
+    color: A, Icon: TrendingUp, title: "Cloud & Tools",
+    items: [{ l: "AWS (S3, RDS, IAM)", n: 3 }, { l: "Generative AI Analysis", n: 4 }, { l: "Prompt Engineering", n: 4 }, { l: "Analytical Thinking", n: 5 }],
   },
 ];
 
