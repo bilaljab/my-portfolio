@@ -782,8 +782,8 @@ button { cursor: pointer; font-family: inherit; }
 ════════════════════════════════════════════════════════ */
 .certs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 180px), 1fr));
-  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 165px), 1fr));
+  gap: 0.85rem;
 }
 .cert-card {
   background: rgba(30, 41, 59, 0.72);

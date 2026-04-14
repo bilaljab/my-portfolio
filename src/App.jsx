@@ -131,9 +131,7 @@ function Hero() {
       <p className="hero-sub">Data Analyst · Problem Solver · Insight Architect</p>
 
       <p className="hero-bio">
-        Transforming complex datasets into actionable growth strategies.
-        Specialized in building end-to-end analytics pipelines with Python,
-        SQL, and Power BI that turn raw numbers into measurable business impact.
+        Informatics Engineering graduate currently interning at HNG — building end-to-end analytics pipelines with Python, SQL, and Power BI that turn raw numbers into measurable business decisions.
       </p>
 
       <div className="hero-ctas">
@@ -469,7 +467,7 @@ const SKILL_CATS = [
   },
   {
     color: O, Icon: Code2, title: "Cloud & Emerging",
-    items: [{ l: "AWS (S3, RDS, Lambda)", n: 3 }, { l: "AWS IAM", n: 3 }, { l: "Generative AI Analysis", n: 4 }, { l: "Prompt Engineering", n: 4 }],
+    items: [{ l: "AWS (S3, RDS, IAM)", n: 3 }, { l: "Power Query", n: 4 }, { l: "Generative AI Analysis", n: 4 }, { l: "Prompt Engineering", n: 4 }],
   },
 ];
 
@@ -515,6 +513,7 @@ function Skills() {
    EXPERIENCE
 ══════════════════════════════════════════════════════ */
 const EXP = [
+  { date: "04/2026", tag: "Internship",        type: "work",    title: "Data Analyst Intern — HNG Internship",        desc: "Completing weekly data analysis tasks using Python and SQL across 10 competitive stages — advancing by delivering results under strict deadlines, producing structured reports reviewed by industry mentors, and collaborating with cross-functional teams in a fully remote environment." },
   { date: "04/2026", tag: "Analytics Project", type: "work",    title: "Online Retail Analytics",                     desc: "End-to-end pipeline on 541K e-commerce transactions — Python cleaning & cohort/RFM analysis, SQLAlchemy ETL into MySQL, and a 3-page Power BI dashboard proving 30% of customers drive 73% of revenue and flagging 2,150 at-risk accounts." },
   { date: "03/2026", tag: "Analytics Project", type: "work",    title: "Independent Data Analytics — NYC Council",    desc: "Delivered a consulting-grade audit of $4.99B in public discretionary funds, engineered a Python–MySQL–Power BI pipeline, and produced executive deliverables structured around the Pyramid Principle." },
   { date: "02/2026", tag: "Virtual Program",   type: "project", title: "BCG X · Data for Decision Making",            desc: "Applied advanced Excel pivot analysis to digital campaign data, producing data-driven budget reallocation recommendations aligned to strategic marketing KPIs." },
@@ -570,11 +569,15 @@ function Experience() {
    CERTIFICATIONS
 ══════════════════════════════════════════════════════ */
 const CERTS = [
+  { title: "McKinsey Forward",    org: "McKinsey Academy",    desc: "Forward Learner · 04/2026 – Present",     color: A },
   { title: "CS50P",               org: "Harvard University",  desc: "Introduction to Python Programming",      color: A },
-  { title: "AWS CPE",             org: "AWS Skill Builder",   desc: "Cloud Practitioner Essentials",           color: O },
-  { title: "IBM GenAI",           org: "IBM & eYouth",        desc: "Generative AI & AI Agents",               color: P },
+  { title: "IBM GenAI",           org: "IBM & eYouth",        desc: "Generative AI Certified Specialist",      color: P },
   { title: "GenAI for Data",      org: "Microsoft",           desc: "Data Analysis Certificate · In Progress", color: P },
+  { title: "AI Fluency",          org: "Anthropic",           desc: "AI Fluency Framework & Foundations",      color: P },
+  { title: "Prompt Engineering",  org: "OpenAI & DeepLearning.AI", desc: "ChatGPT Prompt Engineering",         color: O },
   { title: "Data Analysis",       org: "freeCodeCamp",        desc: "Data Analysis with Python",               color: G },
+  { title: "AWS CPE",             org: "AWS Skill Builder",   desc: "Cloud Practitioner Essentials",           color: O },
+  { title: "Intermediate Python", org: "DataCamp",            desc: "Python for Data Analysis",                color: G },
   { title: "IELTS 7.0",           org: "Academic",            desc: "C1 English Proficiency",                  color: G },
 ];
 
@@ -613,8 +616,7 @@ function Contact() {
             <span style={{ color: A }}>Extraordinary</span>
           </h2>
           <p className="contact-sub">
-            Open to Data Analyst, BI Developer, and Analytics Engineer roles.
-            Let's talk about how I can turn your data into decisions.
+            Currently interning as a Data Analyst at HNG. Open to Data Analyst and BI Developer roles — let's talk about how I can turn your data into decisions.
           </p>
 
           <div className="contact-links">
